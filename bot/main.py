@@ -16,33 +16,26 @@ from aiogram.types import Message
 
 
 from keyboards import reply_keyboards, inline_keyboards
+from commands import commands_router
 
 
-
-router = Router()
 
 
 load_dotenv()
 print(getenv("TOKEN"))
 TOKEN = getenv("TOKEN")
 
-dp = Dispatcher()
 
+
+router = Router()
+dp = Dispatcher()
+dp.include_router(commands_router)
 
 @dp.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
     await message.answer(f"Hello, {html.bold(message.from_user.full_name)}!", reply_markup=reply_keyboards.main_kb)
 
 
-
-@dp.message(F.text == "Test - 1")
-async def test_btn(message: Message):
-    await message.reply('Button Test - 1 is working ✅')
-
-
-@dp.message(Command("sigma"))
-async def test_comand(message: Message):
-    await message.reply("SIGMA")
 
 
 async def main() -> None:
