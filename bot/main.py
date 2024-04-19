@@ -27,6 +27,7 @@ TOKEN = getenv("TOKEN")
 
 
 
+
 router = Router()
 dp = Dispatcher()
 dp.include_router(commands_router)
@@ -34,7 +35,6 @@ dp.include_router(commands_router)
 @dp.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
     await message.answer(f"Hello, {html.bold(message.from_user.full_name)}!", reply_markup=reply_keyboards.main_kb)
-
 
 
 
