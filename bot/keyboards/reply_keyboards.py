@@ -55,6 +55,19 @@ algebra3 = ReplyKeyboardMarkup(keyboard=[
 ])
 
 
+algebra4 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="27")
+    ],
+    [
+        KeyboardButton(text="73")
+    ],
+    [
+        KeyboardButton(text="Інше")
+    ]
+])
+
+
 
 continue_kb1 = ReplyKeyboardMarkup(keyboard=[
     [
@@ -71,5 +84,12 @@ continue_kb2 = ReplyKeyboardMarkup(keyboard=[
 continue_kb3 = ReplyKeyboardMarkup(keyboard=[
     [
         KeyboardButton(text="Поїхали")
+    ]
+])
+
+
+continue_kb4 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="Закінчити опитування")
     ]
 ])
