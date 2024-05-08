@@ -1,18 +1,75 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton, InlineKeyboardMarkup
-from aiogram.filters.callback_data import CallbackData
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 
-main_kb = ReplyKeyboardMarkup(keyboard=[
+subjects_kb = ReplyKeyboardMarkup(keyboard=[
     [
-        KeyboardButton(text = 'Basketball')
+        KeyboardButton(text="Алгебра")
+    ], 
+    [
+        KeyboardButton(text="Фізика")
+    ]
+])
+
+
+#        A  L  G  E  B  R  A
+
+algebra1 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="72")
     ],
     [
-        KeyboardButton(text = 'Dice')
+        KeyboardButton(text="12")
     ],
     [
-        KeyboardButton(text = 'Casino')
+        KeyboardButton(text="288")
     ],
     [
-        KeyboardButton(text = 'Football')
+        KeyboardButton(text="10")
+    ]
+])
+
+
+algebra2 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="21")
+    ],
+    [
+        KeyboardButton(text="-3")
+    ],
+    [
+        KeyboardButton(text="25")
+    ]
+])
+
+
+algebra3 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="8")
+    ],
+    [
+        KeyboardButton(text="64")
+    ],
+    [
+        KeyboardButton(text="32")
+    ]
+])
+
+
+
+continue_kb1 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="Продовжити")
+    ]
+])
+
+continue_kb2 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="Далі")
+    ]
+])
+
+continue_kb3 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="Поїхали")
     ]
 ])

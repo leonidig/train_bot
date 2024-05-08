@@ -21,20 +21,3 @@ from keyboards import reply_keyboards, inline_keyboards
 router = Router()
 
 
-@router.message(F.text == "Basketball")
-async def test_btn(message: Message):
-    await message.answer_dice('🏀')
-
-@router.message(F.text == "Dice")
-async def test_btn(message: Message):
-    await message.answer_dice('🎲')
-
-
-@router.message(F.text == "Casino")
-async def test_btn(message: Message):
-    await message.answer_dice('🎰')
-
-
-@router.message(F.text == "Football")
-async def test_btn(message: Message):
-    await message.answer_dice('⚽️')
