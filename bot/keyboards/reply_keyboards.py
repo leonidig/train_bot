@@ -6,7 +6,10 @@ subjects_kb = ReplyKeyboardMarkup(keyboard=[
         KeyboardButton(text="Алгебра")
     ], 
     [
-        KeyboardButton(text="Фізика")
+        KeyboardButton(text="Географія")
+    ],
+    [
+        KeyboardButton(text="Перекладач")
     ]
 ])
 
@@ -93,3 +96,41 @@ continue_kb4 = ReplyKeyboardMarkup(keyboard=[
         KeyboardButton(text="Закінчити опитування")
     ]
 ])
+
+
+cont_g1 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="До наступного питання")
+    ]
+])
+
+
+cont_g2 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="->")
+    ]
+])
+
+
+cont_g3 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="Далі!!!")
+    ]
+])
+
+
+cont_g4 = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="Завершити тест")
+    ]
+])
+
+
+translator_kb = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text="❌")
+    ],
+    [
+        KeyboardButton(text="🔄️")
+    ]
+],resize_keyboard=True)

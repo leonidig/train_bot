@@ -8,3 +8,12 @@ class Algebra(StatesGroup):
     q4 = State()
 
 
+class Geography(StatesGroup):
+    im1 = State()
+    im2 = State()
+    im3 = State()
+    im4 = State()
+
+
+class Translate(StatesGroup):
+    msg = State()
