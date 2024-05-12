@@ -259,6 +259,27 @@ async def back(callback_query: CallbackQuery):
 
 
 
+@dp.message(F.text == "Контакт Розробника")
+async def send_contact(message: Message):
+    await message.answer_contact(phone_number="+380980195811", first_name="Льоня")
+
+
+@dp.message(F.text == "Посилання на уроки")
+async def links(message: Message):
+    await message.reply(f'''
+https://us05web.zoom.us/j/8452855547?pwd=b2xpZkNRM1hBZXFLdGRjbjVTbGNvdz09 - {hbold('Фізика / Інформатика')}\n
+https://us05web.zoom.us/j/6536950820?pwd=ZGUwL1VZMHpWNnZTVDNQVWpTZEFwUT09- {hbold('Хімія')}\n
+https://us05web.zoom.us/j/82300579633?pwd=kmx7RD3MGqhQqXapWO78nXpiwG8cWh.1- {hbold('Англійська')}\n
+https://us05web.zoom.us/j/7500911710?pwd=UDhDcjlNclJpUjFZVW5aN3cxa1VvZz09 - {hbold('Фізкультура')}\n
+https://us04web.zoom.us/j/5879157046?pwd=74WQImIHBsxUw6i86J3Ewq5ia9SyQZ.1 - {hbold('Зарубіжна література')}\n
+https://us05web.zoom.us/j/7545658956?pwd=OE85SkFEZUJ5YzhXeVc3TVRYMXF5QT09 - {hbold('Труди')}\n
+https://us04web.zoom.us/j/79501510803?pwd=VkhSUW50a01RdEo0QVlVZ0VIbzFZUT09 - {hbold('Німецька')}\n
+https://us05web.zoom.us/j/7265907702?pwd=VkU3K05STTMzRk83YVRVOUg0c1VUUT09 - {hbold('Математика')}\n
+https://zoom.us/j/94270252449?pwd=ZFhIRnBRUnoxbDJoTWROdU9tRWJ2UT09 - {hbold('Біологія')}\n
+https://us04web.zoom.us/j/2127143372?pwd=LyCbyEfuJyYxNZCsricuHsYkyvUt1Q.1 - {hbold('Географія')}\n
+''')
+
+
 
 async def main() -> None:
     bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))

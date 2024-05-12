@@ -10,6 +10,12 @@ subjects_kb = ReplyKeyboardMarkup(keyboard=[
     ],
     [
         KeyboardButton(text="Перекладач")
+    ],
+    [
+        KeyboardButton(text="Контакт Розробника")
+    ],
+    [
+        KeyboardButton(text="Посилання на уроки")
     ]
 ])
 
